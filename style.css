@@ -95,6 +95,17 @@ h1 {
   margin-bottom: 24px;
 }
 
+.bio {
+  background: #fff4f0;
+  border: 2px dashed #e0a07f;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
 .cert {
   background: #f4faff;
   border-radius: 14px;
