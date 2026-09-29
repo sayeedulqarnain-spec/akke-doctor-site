@@ -18,6 +18,7 @@ body {
   background: white;
   border-radius: 24px;
   padding: 40px 32px;
+  padding-top: 64px;
   max-width: 420px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -28,7 +29,7 @@ body {
 .badge {
   position: absolute;
   top: -14px;
-  right: 20px;
+  left: 20px;
   background: #ffd166;
   color: #4a3200;
   font-size: 0.7rem;
@@ -51,9 +52,9 @@ body {
 
 .speech-bubble {
   position: absolute;
-  top: -58px;
+  top: -48px;
   left: 50%;
-  transform: translateX(-10%);
+  transform: translateX(-50%);
   background: #fff8e6;
   border: 3px solid #2b3a4a;
   border-radius: 18px;
@@ -71,7 +72,8 @@ body {
   content: "";
   position: absolute;
   bottom: -14px;
-  left: 30px;
+  left: 50%;
+  margin-left: -10px;
   width: 0;
   height: 0;
   border: 10px solid transparent;
