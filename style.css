@@ -39,9 +39,45 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.avatar {
+.avatar-wrap {
+  position: relative;
   width: 160px;
   margin: 0 auto 16px;
+}
+
+.avatar {
+  width: 160px;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-10%);
+  background: #fff8e6;
+  border: 3px solid #2b3a4a;
+  border-radius: 18px;
+  padding: 10px 16px;
+  font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #2b3a4a;
+  white-space: nowrap;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #fff8e6;
+  border-bottom: 0;
+  filter: drop-shadow(0 2px 0 #2b3a4a);
 }
 
 h1 {
